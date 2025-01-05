@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donasi Palestina</title>
+    <link rel="stylesheet" href="style_faq.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+.panel {
+    margin-bottom: 15px;
+    border: 1px solid #dd8090;
+    border-radius: 5px;
+    padding: 10px;
+}
+.panel-title {
+    font-weight: bold;
+    cursor: pointer;
+}
+.panel-body {
+    display: none;
+    margin-top: 10px;
+}
+.button {
+    background-color: #007BFF;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.button:hover {
+    background-color: #36c58e;
+}
+</style>
+<body>
+    <div class="container">
+        <h1>FAQ Donasi Palestina</h1>
+        
+        <!-- Pertanyaan 1 -->
+        <div class="panel">
+            <div class="panel-title">1. Apa itu Konflik Palestina-Israel?</div>
+            <div class="panel-body">
+                Konflik Palestina-Israel adalah sengketa yang telah berlangsung selama lebih dari 70 tahun, yang berfokus pada klaim atas wilayah yang sama di Timur Tengah.
+            </div>
+            <button class="button" onclick="toggleAnswer(this)">Tampilkan Jawaban</button>
+        </div>
+
+        <!-- Pertanyaan 2 -->
+        <div class="panel">
+            <div class="panel-title">2. Mengapa Palestina membutuhkan bantuan internasional?</div>
+            <div class="panel-body">
+                Palestina membutuhkan bantuan internasional karena rakyat Palestina menghadapi kesulitan luar biasa akibat pendudukan dan konflik yang tak berkesudahan.
+            </div>
+            <button class="button" onclick="toggleAnswer(this)">Tampilkan Jawaban</button>
+        </div>
+
+        <!-- Pertanyaan 3 -->
+        <div class="panel">
+            <div class="panel-title">3. Bagaimana cara saya dapat membantu Palestina?</div>
+            <div class="panel-body">
+                Anda bisa memberikan sumbangan untuk mendukung lembaga-lembaga kemanusiaan yang menyediakan bantuan langsung, seperti makanan, obat-obatan, dan perlindungan bagi keluarga Palestina.
+            </div>
+            <button class="button" onclick="toggleAnswer(this)">Tampilkan Jawaban</button>
+        </div>
+
+        <!-- Pertanyaan 4 -->
+         <div class="panel">
+            <div class="panel-title">4. Apakah saya bisa mengirimkan bantuan langsung ke Palestina?</div>
+            <div class="panel-body">
+                Mengirimkan bantuan langsung ke Palestina bisa sangat menantang karena pembatasan yang diberlakukan oleh Israel, terutama terhadap Gaza. Namun, Anda bisa bekerja sama dengan organisasi-organisasi kemanusiaan internasional yang memiliki jaringan dan izin untuk mengirimkan bantuan. Organisasi-organisasi ini dapat menjamin bahwa bantuan Anda sampai ke mereka yang membutuhkan.
+            </div>
+            <button class="button" onclick="toggleAnswer(this)">Tampilkan Jawaban</button>
+         </div>
+
+         <!-- Pertanyaan 5-->
+          <div class="panel">
+            <div class="panel-title">5. Apa yang dimaksud dengan "Nakba"?</div>
+            <div class="panel-body">
+                "Nakba" adalah kata dalam bahasa Arab yang berarti "bencana" atau "malapetaka". Istilah ini digunakan oleh orang Palestina untuk merujuk pada peristiwa pengungsian massal yang terjadi pada tahun 1948 ketika Negara Israel didirikan. Sekitar 700.000 orang Palestina dipaksa meninggalkan rumah mereka dan menjadi pengungsi. Peristiwa ini dianggap sebagai awal dari penderitaan jangka panjang bagi rakyat Palestina.
+            </div>
+            <button class="button" onclick="toggleAnswer(this)">Tampilkan Jawaban</button>
+          </div>
+
+         <!-- Pertanyaan 6-->
+          <div class="panel">
+            <div class="panel-title">6. Mengapa Yerusalem menjadi isu yang sangat penting dalam konflik ini?</div>
+            <div class="panel-body">
+                Yerusalem adalah kota yang sangat penting bagi tiga agama besar—Yahudi, Kristen, dan Islam. Israel menganggap Yerusalem sebagai ibu kota yang "terpadu", sedangkan Palestina ingin Yerusalem Timur, yang diduduki oleh Israel sejak 1967, menjadi ibu kota negara Palestina yang merdeka. Status Yerusalem menjadi salah satu isu paling sensitif dalam konflik ini karena kedekatannya dengan identitas agama dan politik kedua belah pihak.
+            </div>
+            <button class="button" onclick="toggleAnswer(this)">Tampilkan Jawaban</button>
+          </div>
+
+          <!-- Pertanyaan 7-->
+           <div class="panel">
+            <div class="panel-title">7. Apa yang dimaksud dengan "Gaza Blockade"?</div>
+            <div class="panel-body">
+                "Gaza Blockade" adalah pembatasan yang diberlakukan oleh Israel terhadap
+                pesisir Gaza, yang merupakan wilayah Palestina yang dipisahkan dari daratan Palestina. Pembatasan ini meliputi larangan impor dan ekspor,
+                serta pembatasan akses ke laut. Pembatasan ini telah menyebabkan kessulitan ekonomi dan sosial yang parah bagi penduduk Gaza.
+            </div>
+            <button class="button" onclick="toggleAnswer(this)">Tampilkan Jawaban</button>
+           </div>
+
+           <!-- Pertanyaan 8-->
+            <div class="panel">
+                <div class="panel-title">8.Apakah donasi saya akan benar-benar membantu rakyat Palestina?</div>
+                <div class="panel-body">
+                    Ya, donasi Anda akan benar-benar membantu rakyat Palestina.
+                    Banyak organisasi kemanusiaan yang bekerja di Palestina menggunakan donasi Anda
+                    untuk memberikan bantuan langsung kepada mereka yang membutuhkan, seperti makan
+                    minum, tempat tinggal, dan perawatan medis.
+                </div>
+                <button class="button" onclick="toggleAnswer(this)">Tampilkan Jawaban</button>
+            </div>
+
+            <!-- Pertanyaan 9-->
+             <div class="panel">
+                <div class="panel-title">9. Apa yang dimaksud dengan "Pemukiman Israel" di Tepi Barat?</div>
+                <div class="panel-body">
+                    Pemukiman Israel di Tepi Barat adalah pembangunan permukiman Yahudi
+                    di wilayah yang diduduki oleh Israel sejak 1967. Pembangunan ini
+                    telah menyebabkan peningkatan konflik antara Israel dan Palestina,
+                    karena Palestina menganggap pembangunan ini sebagai bentuk ekspansi
+                    Israel di wilayah mereka.
+                </div>
+                <button class="button" onclick="toggleAnswer(this)">Tampilkan Jawaban</button>
+             </div>
+
+             <!-- Pertanyaan 10-->
+              <div class="panel">
+                <div class="panel-title">10. Apa yang bisa saya lakukan untuk meningkatkan kesadaran tentang Palestina?</div>
+                <div class="panel-body">
+                    Anda bisa meningkatkan kesadaran tentang Palestina dengan cara berikut:
+                    - Membaca buku dan artikel tentang Palestina
+                    - Menonton film dan dokumenter tentang Palestina
+                    - Mengikuti acara dan diskusi tentang Palestina
+                    - Membantu organisasi kemanusiaan yang bekerja di Palestina
+                </div>
+                <button class="button" onclick="toggleAnswer(this)">Tampilkan Jawaban</button>
+              </div>
+
+    <script>
+        function toggleAnswer(button) {
+            const panelBody = button.previousElementSibling;
+            if (panelBody.style.display === "none" || panelBody.style.display === "") {
+                panelBody.style.display = "block";
+                button.textContent = "Sembunyikan Jawaban";
+            } else {
+                panelBody.style.display = "none";
+                button.textContent = "Tampilkan Jawaban";
+            }
+        }
+    </script>
+
+<div class="social-links">
+    <a href="https://wa.me/1234567890" target="_blank" class="whatsapp" title="Hubungi kami di WhatsApp">
+        <img src="https://img.icons8.com/color/48/whatsapp.png" alt="WhatsApp">
+    </a>
+    <a href="https://instagram.com/username" target="_blank" class="instagram" title="Ikuti kami di Instagram">
+        <img src="https://img.icons8.com/color/48/instagram-new.png" alt="Instagram">
+    </a>
+</div>
+
+</body>
+</html>
