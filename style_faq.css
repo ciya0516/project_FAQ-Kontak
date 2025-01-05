@@ -1,0 +1,108 @@
+/* Reset dasar */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Kontainer utama */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #007BFF;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Panel FAQ */
+.panel {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fdfdfd;
+    transition: all 0.3s ease-in-out;
+}
+
+.panel:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.panel-title {
+    background: #007BFF;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 15px 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.panel-title:hover {
+    background: #0056b3;
+}
+
+.panel-body {
+    display: none;
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    font-size: 1em;
+}
+
+/* Tombol */
+.button {
+    display: block;
+    margin: 10px auto 0;
+    padding: 10px 15px;
+    background: #28a745;
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #218838;
+}
+
+/* Link */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    .panel-title {
+        font-size: 1em;
+    }
+    .button {
+        font-size: 0.8em;
+    }
+}
